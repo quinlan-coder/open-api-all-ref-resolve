@@ -1,0 +1,19 @@
+{
+  "title": "Error",
+  "type": "object",
+  "description": "Standard error response",
+  "properties": {
+    "code": {
+      "type": "integer",
+      "description": "Error code"
+    },
+    "message": {
+      "type": "string",
+      "description": "Error message"
+    },
+    "details": {
+      "type": "string"
+    }
+  },
+  "required": ["code", "message"]
+}

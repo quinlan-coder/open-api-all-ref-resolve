@@ -1,0 +1,15 @@
+{
+  "title": "CommonConfig",
+  "type": "object",
+  "properties": {
+    "setting": {
+      "type": "string"
+    },
+    "userRef": {
+      "$ref": "./../../../schemas/user/User.json"
+    },
+    "endpointRef": {
+      "$ref": "../../../api/v1/endpoints/Endpoint.json"
+    }
+  }
+}

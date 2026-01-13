@@ -1,0 +1,10 @@
+{
+  "description": "User Not Found",
+  "content": {
+    "application/json": {
+      "schema": {
+        "$ref": "../../schemas/common/Error.json"
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "title": "NestedAdditional",
+  "type": "object",
+  "properties": {
+    "parent": {
+      "$ref": "../Additional.json"
+    },
+    "deepNested": {
+      "$ref": "../../../schemas/nested/level1/level2/level3/DeepNested.json"
+    },
+    "circular": {
+      "$ref": "./../../../components/circular/CircularA.json"
+    }
+  }
+}

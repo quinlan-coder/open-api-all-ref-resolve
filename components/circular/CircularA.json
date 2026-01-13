@@ -1,0 +1,16 @@
+{
+  "title": "CircularA",
+  "type": "object",
+  "description": "Part of circular reference test",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "refToB": {
+      "$ref": "./CircularB.json"
+    },
+    "user": {
+      "$ref": "../../schemas/user/User.json"
+    }
+  }
+}

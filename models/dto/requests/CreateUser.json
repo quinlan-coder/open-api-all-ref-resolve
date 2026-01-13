@@ -1,0 +1,12 @@
+{
+  "title": "CreateUserRequest",
+  "type": "object",
+  "properties": {
+    "userData": {
+      "$ref": "../../../../schemas/user/User.json"
+    },
+    "additionalInfo": {
+      "$ref": "./../../../../api/schema/Additional.json"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "title": "AdditionalInfo",
+  "type": "object",
+  "description": "Additional user information with cross-directory references",
+  "properties": {
+    "phone": {
+      "type": "string",
+      "description": "User phone number"
+    },
+    "address": {
+      "$ref": "../../components/deep/nested/very/deep/DeepSchema.json"
+    },
+    "userRef": {
+      "$ref": "./../../schemas/user/User.json"
+    },
+    "errorModel": {
+      "$ref": "../../schemas/common/Error.json"
+    }
+  }
+}

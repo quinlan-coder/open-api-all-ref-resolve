@@ -1,0 +1,51 @@
+{
+  "parameters": [
+    {
+      "$ref": "../../components/parameters/userId.json"
+    }
+  ],
+  "get": {
+    "summary": "Get User Info by User ID",
+    "tags": [],
+    "responses": {
+      "200": {
+        "description": "User Found",
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "../../schemas/user/User.json"
+            }
+          }
+        }
+      },
+      "404": {
+        "$ref": "../responses/NotFound.json"
+      }
+    },
+    "operationId": "get-users-userId",
+    "description": "Retrieve the information of the user with the matching user ID."
+  },
+  "patch": {
+    "summary": "Update User Information",
+    "operationId": "patch-users-userId",
+    "responses": {
+      "200": {
+        "description": "User Updated",
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "./../../models/subfolder/another/Response.json"
+            }
+          }
+        }
+      },
+      "404": {
+        "$ref": "../responses/NotFound.json"
+      },
+      "409": {
+        "description": "Email Already Taken"
+      }
+    },
+    "description": "Update the information of an existing user."
+  }
+}

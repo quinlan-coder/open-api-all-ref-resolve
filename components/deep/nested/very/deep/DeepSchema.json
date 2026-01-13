@@ -1,0 +1,26 @@
+{
+  "title": "Address",
+  "type": "object",
+  "description": "Address information - deeply nested schema with complex references",
+  "properties": {
+    "street": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "country": {
+      "type": "string"
+    },
+    "postalCode": {
+      "type": "string"
+    },
+    "relatedUser": {
+      "$ref": "../../../../../schemas/user/User.json"
+    },
+    "additionalInfo": {
+      "$ref": "./../../../../../api/schema/Additional.json"
+    }
+  },
+  "required": ["city", "country"]
+}

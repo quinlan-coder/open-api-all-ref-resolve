@@ -1,0 +1,28 @@
+{
+  "title": "SuccessResponse",
+  "type": "object",
+  "description": "Generic success response wrapper with multiple reference depths",
+  "properties": {
+    "success": {
+      "type": "boolean",
+      "default": true
+    },
+    "data": {
+      "$ref": "../../../schemas/user/User.json"
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "error": {
+      "$ref": "./../../../schemas/common/Error.json"
+    },
+    "deepAddress": {
+      "$ref": "../../../components/deep/nested/very/deep/DeepSchema.json"
+    },
+    "additional": {
+      "$ref": "../../../api/schema/Additional.json"
+    }
+  },
+  "required": ["success"]
+}

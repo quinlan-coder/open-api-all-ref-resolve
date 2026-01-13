@@ -1,0 +1,22 @@
+{
+  "title": "DeeplyNestedSchema",
+  "type": "object",
+  "description": "Testing very deep references with ../../../../..",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "userFromRoot": {
+      "$ref": "../../../../../schemas/user/User.json"
+    },
+    "errorFromCommon": {
+      "$ref": "../../../../../schemas/common/Error.json"
+    },
+    "additionalFromApi": {
+      "$ref": "../../../../../api/schema/Additional.json"
+    },
+    "responseFromModels": {
+      "$ref": "./../../../../../models/subfolder/another/Response.json"
+    }
+  }
+}
